@@ -1,0 +1,24 @@
+This is a simple and basic keylogger I wrote in VB.NET a few months ago.  
+
+It does not raise any flags with popular anti-viruses as of right now, according to this report from VirusTotal: https://www.virustotal.com/file/140f6931863df4cc6eefded4b99f234d71447aba972ff77ca1d258c23dd4fae4/analysis/1333247934/ 
+
+INSTALLATION
+
+Open the project file (vbKeylogger.sln) in Visual Studio or Visual Basic Express and build/compile it.  The resulting file can be found in the /vb-keylogger/bin/Release/ directory.
+
+HOW TO USE
+
+vb-keylogger can be hidden by pressing the key combination CTRL+SHIFT+S (pressing it will toggle the display of the keylogger control panel), and has an inconspicuous process name "svchost.exe"  Upon exit, it will dump its keystroke log to C:\ntklr.sys and make the file hidden.  If you do not have permission to write to that directory, or would like to save the log using a different file name, you can select a different directory and path after checking the "Write to file?" checkbox. 
+
+
+To use, simply:
+1. Check the "Write to file?" checkbox and select a path (or use the default path), then click Open.
+2. Click the Start button to start keylogging.
+3. Press the key combination CTRL+SHIFT+S (all at once) to conceal the window.  ("stealth" mode)
+4. Press some keys, or wait for the victim to type something.
+5. Whenever you want, hit CTRL+SHIFT+S again to bring the window back and view the log.  Exit the application or hit End to make it write the log to the log file you specified.  
+6. Open the logfile to view keystrokes.  This file is hidden, so make sure you have Show hidden files enabled in Windows Explorer to find it.
+
+Feel free to improve or modify this application!
+
+-capablemonkey
